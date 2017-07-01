@@ -1,0 +1,26 @@
+version: '3.0'
+services:
+  hub:
+    image: selenium/hub
+    ports:
+      - 4444:4444
+  
+  chrome-01:
+    image: selenium/node-chrome-debug
+    environment:
+      HUB_PORT_4444_TCP_ADDR: hub
+      HUB_PORT_4444_TCP_PORT: 4444
+    ports:
+      - 5901:5900
+    volumes:
+      - /dev/shm:/dev/shm
+
+  chrome-02:
+    image: selenium/node-chrome-debug
+    environment:
+      HUB_PORT_4444_TCP_ADDR: hub
+      HUB_PORT_4444_TCP_PORT: 4444
+    ports:
+      - 5902:5900
+    volumes:
+      - /dev/shm:/dev/shm
