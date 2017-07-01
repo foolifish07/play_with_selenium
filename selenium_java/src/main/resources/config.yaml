@@ -1,0 +1,13 @@
+
+driver: # WebDriverFactory
+  browser: chrome
+  remoteAddress: http://127.0.0.1:4444/wd/hub
+#  remoteAddress: http://127.0.0.1:9515
+  address: /home/foolifish07/env/dev_env/bin/chromedriver-2.27
+
+# For tests
+accounts:
+  - username: hue-root
+    password: hue-r00t
+  - username: hue-root
+    password: # null
