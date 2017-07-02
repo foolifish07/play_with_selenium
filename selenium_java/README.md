@@ -7,7 +7,10 @@ http://maven.apache.org/surefire/maven-surefire-plugin/test-mojo.html
 http://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
 
 
-
+## install dependencies
+```
+mvn compile
+```
 
 
 ### Run a single test
