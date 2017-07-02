@@ -2,7 +2,9 @@
 driver: # WebDriverFactory
   browser: chrome
   remoteAddress: http://127.0.0.1:4444/wd/hub
+  # remote driver
 #  remoteAddress: http://127.0.0.1:9515
+  # grid hub
   address: /home/foolifish07/env/dev_env/bin/chromedriver-2.27
 
 # For tests
