@@ -12,6 +12,7 @@ import utils.WebDriverFactory;
  * 1. launch chromedriver at 9515
  * 2. Run this test cases with testng-parallel.xml
  * 3. two browser launched with with chromedriver server
+ * 4. Try 3 threads with 2 node grids hub
  */
 
 public class PlayParallel {
