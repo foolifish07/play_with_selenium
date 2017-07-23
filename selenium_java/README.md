@@ -76,4 +76,12 @@ $ mvn surefire:test \
   -Dselenide.reports=test-result-command/reports
 
 ```
-### 
+### allure
+```
+# start up
+$ mvn surefire:test -Dtest=PlaySelenide#startup
+
+# report is under target/site/allure-maven-plugin
+$ mvn io.qameta.allure:allure-maven:report
+
+```

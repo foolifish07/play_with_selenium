@@ -44,7 +44,7 @@ public class PlaySelenide {
         /**
          * By default Selenide puts screenshots to folder build/reports/tests.
          */
-        Configuration.reportsFolder = "test-result/reports";
+        Configuration.reportsFolder = "target/test-result/reports";
 
         open("http://www.baidu.com");
         $(By.id("kw")).setValue("nba");
