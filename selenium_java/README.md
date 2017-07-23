@@ -65,16 +65,15 @@ mvn surefire:test -Dsurefire.suiteXmlFiles="src/main/resources/testng-parallel.x
 
 
 
-### Selenium test
-
-- Using Suite XML Files
-
-  This configuration will override the includes and excludes patterns and run all tests in the suite files.
-
-```bash
-# run parallel
-mvn surefire:test -Dsurefire.suiteXmlFiles="src/main/resources/testng-parallel.xml"
+### Selenide
 ```
+# start up
+$ mvn surefire:test -Dtest=PlaySelenide#startup
 
+# screenshot
+$ mvn surefire:test \
+  -Dtest=PlaySelenide#screenshot \
+  -Dselenide.reports=test-result-command/reports
 
-
+```
+### 
